@@ -44,7 +44,7 @@ Don't forgot to add auto ip assign and auto dns name assignment option to be ena
      instance_tenancy = “default”
      enable_dns_hostnames = true
     tags = {
-     Name = “abhishekvpc”
+     Name = “abhilashavpc”
      }
     }
 
@@ -75,7 +75,7 @@ Don't forgot to add auto ip assign and auto dns name assignment option to be ena
     resource "aws_internet_gateway" "gateway" {
      vpc_id = aws_vpc.myvpc.id
     tags = {
-      Name = "abhi_gateway"
+      Name = "abhilasha_gateway"
      }
     }
 
@@ -144,9 +144,9 @@ Don't forgot to add auto ip assign and auto dns name assignment option to be ena
        associate_public_ip_address = true
        subnet_id = aws_subnet.public.id
        vpc_security_group_ids = [ aws_security_group.task3.id]
-       key_name = "aniket1234"
+       key_name = "abhilasha1234"
     tags = { 
-             Name = "abhios"
+             Name = "abhilashaos"
          }
      }
 To use our terraform code first we have to initialize it by using this command-:
